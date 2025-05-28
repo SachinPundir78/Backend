@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 8080;
 
 
 app.use(cors({
-  origin: "http://localhost:5173", // your frontend URL
+  origin: "*",
   credentials: true, // allow cookies
 }));
 
