@@ -13,10 +13,13 @@ connectWithDB();
 
 const PORT = process.env.PORT || 8080;
 
+const cors = require('cors');
 
 app.use(cors({
-  origin: "*"
+  origin: 'https://riskmanagement009.netlify.app',
+  credentials: true
 }));
+
 
 app.use(express.json());
 app.use(cookieParser());
