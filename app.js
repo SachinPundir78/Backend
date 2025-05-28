@@ -13,7 +13,6 @@ connectWithDB();
 
 const PORT = process.env.PORT || 8080;
 
-const cors = require('cors');
 
 app.use(cors({
   origin: 'https://riskmanagement009.netlify.app',
